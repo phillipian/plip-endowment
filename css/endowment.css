@@ -21,7 +21,6 @@ body {
 }
 .navigation-row .navigation .nav-title {
   font-size: 2.6rem;
-  margin-left: 15px;
 }
 .navigation-row .navigation .links {
   list-style-type: none;
@@ -29,7 +28,7 @@ body {
 .navigation-row .navigation .links li {
   display: inline-block;
   font-size: 1.8rem;
-  padding: 6px 10px;
+  padding: 5px 10px;
 }
 .header-row {
   min-height: 1080px;
