@@ -1,5 +1,9 @@
 var $win = $(window);
 
+$(document).ready(function() {
+  $('.navigation-row').attr('style', 'display: none;');
+});
+
 function slowScroll($elem) {
   var startOffset = 180;
   var scrollDistance = $('.header-video').height(); // or 1080 - $elem.height();
@@ -11,6 +15,11 @@ function slowScroll($elem) {
     var topOffset = scrollTop + ((scrollTop + startOffset) / scrollDistance) * (scrollDistance - scrollTop - startOffset);
     $elem.css('top', topOffset + 'px');
   }
+  
+  if (scrollTop < $('.header-video').height())
+    $('.navigation-row').attr('style', 'display: none;');
+  else
+    $('.navigation-row').removeAttr('style');
 };
 
 var scrollTimer = null;
