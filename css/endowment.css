@@ -19,6 +19,17 @@ body {
 .navigation-row .navigation {
   padding: 5px 15px;
 }
+.navigation-row .navigation .nav-title {
+  font-size: 2.6rem;
+}
+.navigation-row .navigation .links {
+  list-style-type: none;
+}
+.navigation-row .navigation .links li {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+}
 .header-row {
   min-height: 1080px;
   background: #000;
