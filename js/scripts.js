@@ -2,7 +2,7 @@ var $win = $(window);
 
 function slowScroll($elem) {
   var startOffset = 180;
-  var scrollDistance = 1080; // or 1080 - $elem.height();
+  var scrollDistance = $('.header-video').height(); // or 1080 - $elem.height();
   
   scrollTimer = null;
   var scrollTop = $win.scrollTop();
