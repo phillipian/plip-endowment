@@ -116,8 +116,8 @@ iframe.video {
   color: #333;
 }
 .row .row-text .row-body {
-  z-index: 3;
   padding: 10px 25px;
+  z-index: 3;
   background: #ddd;
   opacity: 0.85;
   font-size: 2.0rem;
@@ -126,6 +126,31 @@ iframe.video {
 .no-bg.row .row-text .row-body {
   background: transparent;
   opacity: 1;
+}
+.row .row-text blockquote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px 25px;
+  border-left: 0;
+  z-index: 3;
+  background: #ddd;
+  opacity: 0.85;
+}
+.no-bg.row .row-text blockquote {
+  background: transparent;
+  opacity: 1;
+}
+.row .row-text blockquote .quotation {
+  line-height: 1.5;
+  font-size: 3.0rem;
+  width: 85%;
+}
+.row .row-text blockquote .attribution {
+  margin: 0 0 10px 0;
+  width: 45%;
+  font-style: italic;
+  float: right;
+  font-size: 2.0rem;
 }
 .row .row-text .row-image {
   margin-bottom: 10px;
@@ -139,19 +164,4 @@ iframe.video {
   font-size: 4.0rem;
   font-weight: bold;
   text-align: center;
-}
-blockquote {
-  padding: 15px;
-  border-left: 0;
-}
-blockquote .quotation {
-  line-height: 1.5;
-  font-size: 3.0rem;
-  width: 75%;
-}
-blockquote .attribution {
-  width: 45%;
-  font-style: italic;
-  float: right;
-  font-size: 2.0rem;
 }

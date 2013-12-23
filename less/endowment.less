@@ -112,14 +112,35 @@ iframe.video { margin: 15px auto;
       .no-bg& { color: #333; }
     }
 
-    .row-body { z-index: 3;
-                padding: 10px 25px;
+    .row-body { padding: 10px 25px;
+                z-index: 3;
                 background: #ddd;
                 opacity: 0.85;
                 font-size: 2.0rem;
                 line-height: 1.7;
       .no-bg& { background: transparent;
                 opacity: 1;
+      }
+    }
+    blockquote { margin-top: 50px;
+                 margin-bottom: 50px;
+                 padding: 10px 25px;
+                 border-left: 0;
+                 z-index: 3;
+                 background: #ddd;
+                 opacity: 0.85;
+      .no-bg& { background: transparent;
+                opacity: 1;
+      }
+      .quotation { line-height: 1.5;
+                   font-size: 3.0rem;
+                   width: 85%;
+      }
+      .attribution { margin: 0 0 10px 0;
+                     width: 45%;
+                     font-style: italic;
+                     float: right;
+                     font-size: 2.0rem;
       }
     }
     .row-image { margin-bottom: 10px;
@@ -136,19 +157,6 @@ iframe.video { margin: 15px auto;
            text-align: center;
 }
 
-blockquote { padding: 15px;
-             border-left: 0;
-  .quotation {
-    line-height: 1.5;
-    font-size: 3.0rem;
-    width: 75%;
-  }
-  .attribution {
-    width: 45%;
-    font-style: italic;
-    float: right;
-    font-size: 2.0rem;
-  }
-}
+
 
 // old styles (clean up)
