@@ -16,6 +16,16 @@
     <![endif]-->
   </head>
   <body>
+    <!-- facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173482876154362";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
     <div class="navigation-row">
       <nav class="navigation">
         <div class="pull-left">
@@ -41,6 +51,13 @@
       <div id="header-text" class="col-md-9 col-md-offset-2 col-sm-10 col-sm-offset-1">
         <p class="h1">The Phillipian Endowment</p>
         <p>Securing the future of <span class="em">student journalism</span></p>
+        
+        <div class="icons">
+          <div class="fb-share-button" data-href="http://endowment.phillipian.net" data-type="button_count"></div>
+
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="phillipian" data-related="phillipianarts, phillipiancopy, phillipianfeech, phillipiannews, phillipianoped, phillipiansprts" data-dnt="true" data-count="horizontal" data-lang="en">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
       </div>
     </div>
 
@@ -207,7 +224,6 @@
     </section>
     
     <div class="footer"><p>The Phillipian &#169; 2013. Created by <a href="http://www.twitter.com/alexander_jiang">@alexander_jiang</a> and <a href="http://www.twitter.com/ghosono">@ghosono</a></p></div>
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

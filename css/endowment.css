@@ -63,6 +63,10 @@ body {
   font-weight: bold;
   color: #fff;
 }
+.header-row #header-text .icons .fb-share-button {
+  display: inline-block;
+  margin-right: 10px;
+}
 iframe.video {
   margin: 15px auto;
   display: block;
