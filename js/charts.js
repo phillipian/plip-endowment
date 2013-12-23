@@ -6,11 +6,10 @@ $(function () {
       plotShadow: false
     },
     colors: [
-      '#5063A0',
-      '#6C86D9',
-      '#2B55D9',
-      '#1c378d',
-      '#12235A'
+      '#1a3c61',
+      '#54b9ff',
+      '#0096fc',
+      '#005c9c'
     ],
     credits: {
       enabled: false
