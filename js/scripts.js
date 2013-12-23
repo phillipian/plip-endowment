@@ -25,9 +25,16 @@ $(document).ready(function() {
     if (scrollTimer) {
       clearTimeout(scrollTimer);   // clear any previous pending timer
     }
+    
     if (checkWidth()) {
       scrollTimer = setTimeout(slowScroll($('#header-text')), 500);   // set new timer
     }
+    
+    // regardless of width of screen, decide whether to display $('.navigation-row')
+    if ($win.scrollTop() < $('.header-row').height())
+      $('.navigation-row').attr('style', 'display: none;');
+    else
+      $('.navigation-row').removeAttr('style');
   });
 });
 
@@ -47,17 +54,12 @@ function checkWidth() {
 function slowScroll($elem) {
   var startOffset = 180;
   var scrollDistance = 1080;
-
+  
+  scrollTop = $win.scrollTop();
   scrollTimer = null;
-  var scrollTop = $win.scrollTop();
-  if (scrollTop < scrollDistance) {
+  if ($win.scrollTop() < scrollDistance) {
     // keeps the percentage of distance traveled consistent
     var topOffset = scrollTop + ((scrollTop + startOffset) / scrollDistance) * (scrollDistance - scrollTop - startOffset);
     $elem.css('top', topOffset + 'px');
   }
-  
-  if (scrollTop < $('.header-video').height())
-    $('.navigation-row').attr('style', 'display: none;');
-  else
-    $('.navigation-row').removeAttr('style');
 };
