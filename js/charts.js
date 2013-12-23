@@ -5,6 +5,13 @@ $(function () {
       plotBorderWidth: null,
       plotShadow: false
     },
+    colors: [
+      '#5063A0',
+      '#6C86D9',
+      '#2B55D9',
+      '#1c378d',
+      '#12235A'
+    ],
     credits: {
       enabled: false
     },
@@ -21,7 +28,7 @@ $(function () {
       }
     },
     tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      pointFormat: '{series.name}: <b>${point.y}</b>'
     },
     plotOptions: {
       pie: {
@@ -40,10 +47,10 @@ $(function () {
       type: 'pie',
       name: 'Allocation',
       data: [
-      ['The Phillipian Online',  10],
-      ['Technology and equipment renewal',  10],
-      ['Free copies of <i>The Phillipian</i> for students',  48],
-      ['Off-campus opportunities',  32]
+        ['The Phillipian Online', 50000],
+        ['Technology and equipment renewal', 50000],
+        ['Free copies of <i>The Phillipian</i> for students', 240000],
+        ['Off-campus opportunities', 160000]
       ]
     }]
   });
