@@ -11,7 +11,7 @@
 html { font-size: 62.5%; } // allows for easy conversion of px to rem units (now 1rem = 10px instead of 16px)
 
 body { font-family: @default-font;
-       background: #fff;
+       background: #000;
        overflow-x: hidden;
 }
 
@@ -24,9 +24,7 @@ body { font-family: @default-font;
                   z-index: 6;
                   background: @flat-ui-clouds;
   .navigation { padding: 5px 15px;
-    .nav-title { font-size: 2.6rem;
-      
-    }
+    .nav-title { font-size: 2.6rem; }
     .links { list-style-type: none;
       li { display: inline-block;
            font-size: 1.8rem;
@@ -36,8 +34,7 @@ body { font-family: @default-font;
   }
 }
 
-.header-row { min-height: 1080px;
-              background: #000;
+.header-row { height: 1080px;
               overflow-x: hidden;
   .header-video { position: fixed;
 	  			        overflow-x: hidden;
@@ -57,7 +54,8 @@ body { font-family: @default-font;
                  text-shadow: #222 0px 1px 1px;
                  z-index: 2;
     .h1 { font-family: @lora;
-          font-size: 5.6rem;
+          font-size: 5.5rem;
+          letter-spacing: -1px;
     }
     p { font-family: @lora;
         font-size: 3.0rem;
@@ -136,6 +134,7 @@ iframe.video { margin: 15px auto;
                  z-index: 3;
                  background: #ddd;
                  opacity: 0.85;
+                 overflow: auto;
       .no-bg& { background: transparent;
                 opacity: 1;
       }

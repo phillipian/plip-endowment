@@ -3,7 +3,7 @@ html {
 }
 body {
   font-family: "Lora", serif;
-  background: #fff;
+  background: #000;
   overflow-x: hidden;
 }
 .navigation-row {
@@ -31,8 +31,7 @@ body {
   padding: 5px 10px;
 }
 .header-row {
-  min-height: 1080px;
-  background: #000;
+  height: 1080px;
   overflow-x: hidden;
 }
 .header-row .header-video {
@@ -52,7 +51,8 @@ body {
 }
 .header-row #header-text .h1 {
   font-family: "Lora", serif;
-  font-size: 5.6rem;
+  font-size: 5.5rem;
+  letter-spacing: -1px;
 }
 .header-row #header-text p {
   font-family: "Lora", serif;
@@ -141,6 +141,7 @@ iframe.video {
   z-index: 3;
   background: #ddd;
   opacity: 0.85;
+  overflow: auto;
 }
 .no-bg.row .row-text blockquote {
   background: transparent;
