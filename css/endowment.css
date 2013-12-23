@@ -146,8 +146,9 @@ body {
 }
 .welcome {
   font-family: "Lora", serif;
-  font-size: 3.0rem;
+  font-size: 4.0rem;
   font-weight: bold;
+  text-align: center;
 }
 blockquote {
   padding: 15px;
