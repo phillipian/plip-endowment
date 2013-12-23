@@ -66,6 +66,8 @@ body {
 .header-row #header-text .icons .fb-share-button {
   display: inline-block;
   margin-right: 10px;
+  position: relative;
+  top: -6px;
 }
 iframe.video {
   margin: 15px auto;
