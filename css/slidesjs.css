@@ -40,7 +40,7 @@
 }
 .slide-text blockquote.story {
   padding: 15px;
-  margin-top: 10px;
+  margin-top: 30px;
   border-left: 0;
   z-index: 3;
   background: #ddd;
@@ -48,7 +48,7 @@
   overflow: auto;
 }
 .slide-text blockquote.story .quotation {
-  line-height: 1.4;
+  line-height: 1.3;
   font-size: 2.4rem;
   width: 100%;
 }

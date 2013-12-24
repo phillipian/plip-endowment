@@ -20,7 +20,7 @@ $(function () {
       }
     },
     title: {
-      text: 'Allocations of Annual Funds',
+      text: 'Allocation of Annual Funds',
       style: {
         color: '#000000',
         fontSize: '2.0rem'
