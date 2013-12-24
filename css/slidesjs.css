@@ -1,0 +1,108 @@
+#slides {
+  display: none;
+}
+#slides a {
+  color: #000;
+}
+#slides a:hover {
+  color: #1c378d;
+  text-decoration: none;
+}
+#slides .slidesjs-pagination {
+  list-style: none;
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 8px 15px 0 0;
+}
+#slides .slidesjs-pagination li {
+  display: inline-block;
+  padding: 0 5px;
+}
+#slides .slidesjs-pagination .active {
+  color: #95a5a6;
+}
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+.slide-image img {
+  width: 100%;
+  margin: 0;
+  opacity: 0.8;
+}
+.slide-text {
+  position: inherit;
+  padding: 0;
+  overflow: hidden;
+}
+.slide-text blockquote.story {
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 0;
+  z-index: 3;
+  background: #ddd;
+  opacity: 0.9;
+  overflow: auto;
+}
+.slide-text blockquote.story .quotation {
+  line-height: 1.4;
+  font-size: 2.4rem;
+  width: 100%;
+}
+.slide-text blockquote.story .attribution {
+  margin: 0 0 10px 0;
+  font-style: italic;
+  float: right;
+  font-size: 1.8rem;
+}
+/* Center the slideshow */
+.story-carousel {
+  margin: 0 auto;
+}
+/* Show active item in the pagination */
+.slidesjs-pagination .active {
+  color: red;
+}
+.slidesjs-navigation {
+  display: block;
+  float: left;
+  font-size: 2.4rem;
+}
+.slidesjs-navigation.slidesjs-previous {
+  margin: 5px 5px 0 15px;
+}
+.slidesjs-navigation.slidesjs-next {
+  margin: 5px 0 0 5px;
+}
+/* Media queries for a responsive layout */
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .story-carousel {
+    width: auto;
+  }
+}
+/* For smartphones */
+@media (max-width: 480px) {
+  .story-carousel {
+    width: auto;
+  }
+}
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .story-carousel {
+    width: 724px;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-offset-half {
+    margin-left: 4.166666666666667%;
+  }
+}
+/* For larger displays */

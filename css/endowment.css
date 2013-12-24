@@ -13,7 +13,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 6;
+  z-index: 15;
   background: #ecf0f1;
 }
 .navigation-row .navigation {
