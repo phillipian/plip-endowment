@@ -42,10 +42,10 @@ $(function () {
       type: 'pie',
       name: 'Allocation',
       data: [
-        ['The Phillipian Online', 50000],
-        ['Technology and equipment renewal', 50000],
-        ['Free copies of <i>The Phillipian</i> for students', 240000],
-        ['Off-campus opportunities', 160000]
+        ['The Phillipian Online', 2500],
+        ['Technology and equipment renewal', 2500],
+        ['Free copies of <i>The Phillipian</i> for students', 12000],
+        ['Off-campus opportunities', 8000]
       ]
     }]
   });
