@@ -1,17 +1,14 @@
 var $win = $(window);
 var width = $win.width();
-var $nav-row = $('#navigation-row');
-var $head-text = $('#header-text');
-var $head-row = $('#header-row');
 
 // initial state of the window
-$nav-row.attr('style', 'display: none;');
+$('.navigation-row').attr('style', 'display: none;');
 if (width > 680) {
-  $head-text.css('top', '180px');
-  $head-row.css('height', '1080px');
+  $('#header-text').css('top', '180px');
+  $('.header-row').css('height', '1080px');
 } else {
-  $head-text.css('top', '60px');
-  $head-row.css('height', $win.height() + 'px');
+  $('#header-text').css('top', '60px');
+  $('.header-row').css('height', $win.height() + 'px');
 }
 
 $(document).ready(function() {
@@ -30,26 +27,26 @@ $(document).ready(function() {
     }
     
     if (checkWidth()) {
-      scrollTimer = setTimeout(slowScroll($head-text), 500);   // set new timer
+      scrollTimer = setTimeout(slowScroll($('#header-text')), 500);   // set new timer
     }
     
     // regardless of width of screen, decide whether to display $('.navigation-row')
     if ($win.scrollTop() < $('.header-row').height())
-      $nav-row.attr('style', 'display: none;');
+      $('.navigation-row').attr('style', 'display: none;');
     else
-      $nav-row.removeAttr('style');
+      $('.navigation-row').removeAttr('style');
   });
 });
 
 function checkWidth() {
   width = $win.width();
   if (width > 680) {
-    $head-text.css('top', '180px');
-    $head-row.css('height', '1080px');
+    $('#header-text').css('top', '180px');
+    $('.header-row').css('height', '1080px');
     return true;
   } else {
-    $head-text.css('top', '60px');
-    $head-row.css('height', $win.height() + 'px');
+    $('#header-text').css('top', '60px');
+    $('.header-row').css('height', $win.height() + 'px');
     return false;
   }
 };
