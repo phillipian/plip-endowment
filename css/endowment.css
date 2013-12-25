@@ -1,4 +1,4 @@
-html {
+bghtml {
   font-size: 62.5%;
 }
 body {
@@ -40,7 +40,6 @@ body {
   top: 0;
   left: 0;
   opacity: 0.8;
-  width: 100%;
 }
 .header-row #header-text {
   position: absolute;
@@ -202,4 +201,7 @@ iframe.video {
 }
 .footer p {
   margin: 0;
+}
+.footer video {
+  width: 100%;
 }
