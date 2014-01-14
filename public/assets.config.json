@@ -1,0 +1,12 @@
+{
+  "staticAssets": {
+    "global": {
+      "js": [
+        "/assets//endowment.2f6abd12.min.js"
+      ],
+      "css": [
+        "/assets//endowment.11cbbc32.min.css"
+      ]
+    }
+  }
+}

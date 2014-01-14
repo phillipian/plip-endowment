@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       minify: {
         files: [{
-          src: ['css/*.css', '!css/*.min.css'],
+          src: ['css/bootstrap.min.css', 'css/endowment.css', 'css/slidesjs.css'],
           dest: 'css/endowment.min.css'
         }]
       }
