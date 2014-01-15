@@ -1,4 +1,4 @@
-bghtml {
+html {
   font-size: 62.5%;
 }
 body {
@@ -202,8 +202,6 @@ iframe.video {
 .footer p {
   margin: 0;
 }
-video {
+.footer video {
   width: 100%;
-  min-width:1920px;
-  height: auto;
 }
